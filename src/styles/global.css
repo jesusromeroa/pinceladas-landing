@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@theme {
+  /* Paleta Pinceladas With Us */
+  --color-pinceladas-orange: #F36523; /* Naranja vibrante del fondo */
+  --color-pinceladas-pink: #F4A4B4;   /* Rosado pastel/texturas */
+  --color-pinceladas-blue: #2B5B94;   /* Azul del texto "CELEBRA TU CUMPLE" */
+  --color-pinceladas-paper: #FDFBF7;  /* Blanco cálido tipo papel central */
+}
