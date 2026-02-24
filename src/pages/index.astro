@@ -6,41 +6,104 @@ import Layout from '../layouts/Layout.astro';
   <div class="bg-pinceladas-paper min-h-screen font-sans">
     
     <header class="w-full p-6 flex justify-between items-center max-w-6xl mx-auto">
-      <div class="font-bold text-2xl text-pinceladas-blue tracking-tight">
+      <div class="font-bold text-2xl text-pinceladas-wine tracking-tight">
         Pinceladas <span class="text-pinceladas-orange">With Us</span>
       </div>
-      <nav class="hidden md:flex gap-6 text-pinceladas-blue font-medium">
+      <nav class="hidden md:flex gap-6 text-pinceladas-wine font-medium">
+        <a href="#servicios" class="hover:text-pinceladas-pink transition-colors">Servicios</a>
         <a href="#eventos" class="hover:text-pinceladas-pink transition-colors">Eventos</a>
         <a href="#nosotros" class="hover:text-pinceladas-pink transition-colors">Nosotros</a>
       </nav>
     </header>
 
-    <main class="max-w-6xl mx-auto px-6 py-12 md:py-20 mt-8">
+    <main class="max-w-6xl mx-auto px-6 py-12 md:py-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div class="flex flex-col gap-6">
+        <h1 class="text-5xl md:text-6xl font-black text-pinceladas-wine leading-tight tracking-tight">
+          Conecta con tu <br/>
+          <span class="text-pinceladas-orange">lado creativo</span>.
+        </h1>
+        <p class="text-lg text-gray-600 font-medium leading-relaxed max-w-lg">
+          Únete a nuestras experiencias artísticas. Un espacio diseñado para relajarte, compartir y dejar que la inspiración fluya sobre el lienzo.
+        </p>
+        <div class="flex mt-2">
+          <a href="#eventos" class="bg-pinceladas-orange hover:bg-orange-600 text-white px-8 py-3 rounded-full font-bold transition-all shadow-md text-lg">
+            Ver próximos eventos
+          </a>
+        </div>
+      </div>
+
+      <div class="relative w-full aspect-square flex justify-center items-center">
+        <div class="w-full h-full border-4 border-pinceladas-wine border-dashed rounded-3xl flex items-center justify-center text-pinceladas-wine text-xl font-bold text-center p-4 bg-white/50">
+          [Ilustración principal de Pinceladas]
+        </div>
+      </div>
+    </main>
+
+    <section id="servicios" class="max-w-6xl mx-auto px-6 py-16">
+      <div class="mb-10 text-center md:text-left">
+        <h2 class="text-3xl font-black text-pinceladas-wine uppercase tracking-tight">Experiencias Privadas</h2>
+        <p class="text-gray-600 mt-2">Personalizamos el arte para tus momentos especiales.</p>
+      </div>
+
       <div class="bg-pinceladas-orange rounded-3xl p-8 md:p-16 grid grid-cols-1 md:grid-cols-2 gap-12 items-center shadow-xl relative overflow-hidden">
         
         <div class="absolute top-0 right-0 w-32 h-32 bg-pinceladas-pink opacity-50 rounded-bl-full mix-blend-multiply"></div>
 
         <div class="flex flex-col gap-6 relative z-10 bg-pinceladas-paper p-8 md:p-12 rounded-xl shadow-lg transform -rotate-1">
-          <h1 class="text-4xl md:text-6xl font-black text-pinceladas-blue leading-tight uppercase tracking-tight">
+          <h3 class="text-4xl md:text-5xl font-black text-pinceladas-wine leading-tight uppercase tracking-tight">
             Celebra tu cumple <br/>
-            <span class="text-pinceladas-orange normal-case text-5xl">with us</span>
-          </h1>
-          <p class="text-xl text-pinceladas-blue font-medium leading-relaxed">
+            <span class="text-pinceladas-orange normal-case text-4xl">with us</span>
+          </h3>
+          <p class="text-lg text-pinceladas-wine font-medium leading-relaxed">
             Pinta, crea recuerdos únicos y haz algo diferente en ese día especial.
           </p>
           <div class="flex mt-2">
-            <a href="#reserva" class="bg-pinceladas-pink hover:bg-pinceladas-blue text-white px-8 py-3 rounded-full font-bold transition-all shadow-md text-lg">
-              Reservar Fecha
+            <a href="#contacto" class="bg-pinceladas-pink hover:bg-pinceladas-wine text-white px-8 py-3 rounded-full font-bold transition-all shadow-md">
+              Cotizar mi fecha
             </a>
           </div>
         </div>
 
         <div class="relative w-full aspect-square flex justify-center items-center z-10">
           <div class="w-full h-full border-4 border-pinceladas-pink border-dashed rounded-2xl flex items-center justify-center text-pinceladas-paper text-xl font-bold text-center p-4 bg-pinceladas-orange/50 backdrop-blur-sm">
-            [Espacio ideal para poner tus fotos de los lienzos o pasteles]
+            [Foto de los pasteles, paleta de colores y el flyer]
           </div>
         </div>
       </div>
-    </main>
+    </section>
+
+    <section id="eventos" class="bg-white py-20 border-t border-pinceladas-paper">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="mb-12 text-center">
+          <h2 class="text-3xl md:text-4xl font-black text-pinceladas-wine uppercase tracking-tight">Próximos Eventos</h2>
+          <p class="text-gray-600 mt-3">Asegura tu lugar en nuestras siguientes sesiones de pintura.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <div class="bg-pinceladas-paper rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-xl transition-all group">
+            <div class="h-48 bg-pinceladas-pink/20 rounded-xl mb-6 flex items-center justify-center overflow-hidden">
+              <span class="text-pinceladas-pink font-medium">[Ilustración del evento]</span>
+            </div>
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="text-xl font-black text-pinceladas-wine">Tarde de Pintura</h3>
+              <span class="bg-pinceladas-pink/20 text-pinceladas-wine text-xs font-bold px-3 py-1 rounded-full">Cupos limitados</span>
+            </div>
+            <p class="text-gray-600 text-sm mb-6">Materiales incluidos. Ven a disfrutar de una tarde diferente con buena música y lienzos en blanco.</p>
+            
+            <div class="flex justify-between items-center pt-4 border-t border-gray-200">
+              <div class="flex flex-col">
+                <span class="text-sm text-gray-500 font-medium uppercase tracking-wider">Inversión</span>
+                <span class="text-2xl font-black text-pinceladas-orange">$24 <span class="text-sm text-gray-500 font-normal normal-case">/ persona</span></span>
+              </div>
+              <button class="bg-pinceladas-wine text-white px-5 py-2.5 rounded-xl font-bold hover:bg-pinceladas-orange transition-colors">
+                Anotarme
+              </button>
+            </div>
+          </div>
+          </div>
+      </div>
+    </section>
+
   </div>
 </Layout>
