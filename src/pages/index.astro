@@ -10,7 +10,7 @@ import Layout from '../layouts/Layout.astro';
         Pinceladas <span class="text-pinceladas-orange">With Us</span>
       </div>
       <nav class="hidden md:flex gap-6 text-pinceladas-wine font-medium">
-        <a href="#servicios" class="hover:text-pinceladas-pink transition-colors">Servicios</a>
+        <a href="#servicios" class="hover:text-pinceladas- transition-colors">Servicios</a>
         <a href="#eventos" class="hover:text-pinceladas-pink transition-colors">Eventos</a>
         <a href="#nosotros" class="hover:text-pinceladas-pink transition-colors">Nosotros</a>
 		<a href="#contacto" class="hover:text-pinceladas-pink transition-colors">Contacto</a>
@@ -217,21 +217,24 @@ import Layout from '../layouts/Layout.astro';
         </div>
 
         <div class="w-full md:w-1/2 bg-pinceladas-paper rounded-2xl p-8 shadow-lg relative z-10">
-          <form class="flex flex-col gap-5">
+          <form action="https://formspree.io/f/xwvnabwe" method="POST" class="flex flex-col gap-5">
             <div>
               <label class="block text-pinceladas-wine font-bold mb-2 text-sm uppercase tracking-wide" for="nombre">Tu Nombre</label>
-              <input type="text" id="nombre" class="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-pinceladas-orange focus:ring-2 focus:ring-pinceladas-orange/20 transition-all font-medium text-gray-800" placeholder="Ej. Ana Pérez">
+              <input type="text" id="nombre" name="nombre" required class="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-pinceladas-orange focus:ring-2 focus:ring-pinceladas-orange/20 transition-all font-medium text-gray-800" placeholder="Ej. Ana Pérez">
             </div>
+            
             <div>
               <label class="block text-pinceladas-wine font-bold mb-2 text-sm uppercase tracking-wide" for="email">Tu Correo</label>
-              <input type="email" id="email" class="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-pinceladas-orange focus:ring-2 focus:ring-pinceladas-orange/20 transition-all font-medium text-gray-800" placeholder="hola@correo.com">
+              <input type="email" id="email" name="email" required class="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-pinceladas-orange focus:ring-2 focus:ring-pinceladas-orange/20 transition-all font-medium text-gray-800" placeholder="hola@correo.com">
             </div>
+            
             <div>
               <label class="block text-pinceladas-wine font-bold mb-2 text-sm uppercase tracking-wide" for="mensaje">Mensaje</label>
-              <textarea id="mensaje" rows="4" class="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-pinceladas-orange focus:ring-2 focus:ring-pinceladas-orange/20 transition-all font-medium text-gray-800 resize-none" placeholder="¿En qué podemos ayudarte?"></textarea>
+              <textarea id="mensaje" name="mensaje" required rows="4" class="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-pinceladas-orange focus:ring-2 focus:ring-pinceladas-orange/20 transition-all font-medium text-gray-800 resize-none" placeholder="¿En qué podemos ayudarte?"></textarea>
             </div>
-            <button type="button" class="mt-2 bg-pinceladas-orange hover:bg-[#d9551a] text-white font-black uppercase tracking-wide text-lg py-4 rounded-xl transition-colors shadow-md flex justify-center items-center gap-2">
-              Enviar Mensaje <span>🚀</span>
+            
+            <button type="submit" class="mt-2 bg-pinceladas-orange hover:bg-[#d9551a] text-white font-black uppercase tracking-wide text-lg py-4 rounded-xl transition-colors shadow-md flex justify-center items-center gap-2">
+              Enviar Mensaje <span></span>
             </button>
           </form>
         </div>
