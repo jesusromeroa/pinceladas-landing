@@ -13,14 +13,15 @@ import Layout from '../layouts/Layout.astro';
         <a href="#servicios" class="hover:text-pinceladas-pink transition-colors">Servicios</a>
         <a href="#eventos" class="hover:text-pinceladas-pink transition-colors">Eventos</a>
         <a href="#nosotros" class="hover:text-pinceladas-pink transition-colors">Nosotros</a>
+		<a href="#contacto" class="hover:text-pinceladas-pink transition-colors">Contacto</a>
       </nav>
     </header>
 
     <main class="max-w-6xl mx-auto px-6 py-12 md:py-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
       <div class="flex flex-col gap-6">
         <h1 class="text-5xl md:text-6xl font-black text-pinceladas-wine leading-tight tracking-tight">
-          Conecta con tu <br/>
-          <span class="text-pinceladas-orange">lado creativo</span>.
+          Tu historia <br/>
+          <span class="text-pinceladas-orange">en cada pincelada</span>
         </h1>
         <p class="text-lg text-gray-600 font-medium leading-relaxed max-w-lg">
           Únete a nuestras experiencias artísticas. Un espacio diseñado para relajarte, compartir y dejar que la inspiración fluya sobre el lienzo.
@@ -58,7 +59,7 @@ import Layout from '../layouts/Layout.astro';
             Pinta, crea recuerdos únicos y haz algo diferente en ese día especial.
           </p>
           <div class="flex mt-2">
-            <a href="#contacto" class="bg-pinceladas-pink hover:bg-pinceladas-wine text-white px-8 py-3 rounded-full font-bold transition-all shadow-md">
+            <a href="#contacto" class="bg-pinceladas-wine hover:bg-pinceladas-orange text-white px-8 py-3 rounded-full font-bold transition-all shadow-md">
               Cotizar mi fecha
             </a>
           </div>
@@ -86,7 +87,7 @@ import Layout from '../layouts/Layout.astro';
               <span class="text-pinceladas-pink font-medium">[Ilustración del evento]</span>
             </div>
             <div class="flex justify-between items-start mb-2">
-              <h3 class="text-xl font-black text-pinceladas-wine">Tarde de Pintura</h3>
+              <h3 class="text-xl font-black text-pinceladas-wine">Pinta tu mascota</h3>
               <span class="bg-pinceladas-pink/20 text-pinceladas-wine text-xs font-bold px-3 py-1 rounded-full">Cupos limitados</span>
             </div>
             <p class="text-gray-600 text-sm mb-6">Materiales incluidos. Ven a disfrutar de una tarde diferente con buena música y lienzos en blanco.</p>
@@ -105,5 +106,165 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </section>
 
+	<section id="nosotros" class="max-w-6xl mx-auto px-6 py-24">
+      <div class="bg-pinceladas-pink/10 rounded-3xl p-8 md:p-16 grid grid-cols-1 md:grid-cols-2 gap-12 items-center border border-pinceladas-pink/20 relative overflow-hidden">
+        
+        <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-pinceladas-orange opacity-10 rounded-full blur-2xl"></div>
+
+        <div class="flex flex-col gap-6 relative z-10">
+          <h2 class="text-4xl md:text-5xl font-black text-pinceladas-wine uppercase tracking-tight">
+            Detrás de <br/>
+            <span class="text-pinceladas-orange">los lienzos</span>
+          </h2>
+          <div class="space-y-4 text-lg text-gray-700 font-medium leading-relaxed">
+            <p>
+              ¡Hola! Somos Mar y Jesús. Pinceladas With Us nació de nuestra pasión por crear espacios donde el arte, la creatividad y la buena compañía se encuentren.
+            </p>
+            <p>
+              Creemos firmemente que todos tienen un lado artístico esperando ser explorado. Nuestro objetivo es brindarte una experiencia relajante, llena de color, donde puedas desconectarte de la rutina y llevarte a casa una obra creada con tus propias manos. 
+            </p>
+            <p class="text-sm text-gray-500 italic">
+              (Y quién sabe, ¡quizás en alguna de nuestras sesiones tengas la suerte de conocer a Benji, nuestro perrito y asistente estrella!).
+            </p>
+          </div>
+        </div>
+
+        <div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-xl border-8 border-white transform rotate-2 hover:rotate-0 transition-transform duration-500 z-10 cursor-pointer">
+          <div class="w-full h-full bg-pinceladas-orange/20 flex flex-col items-center justify-center text-pinceladas-wine p-6 text-center backdrop-blur-sm">
+            <span class="text-5xl mb-3">📸</span>
+            <span class="font-bold text-xl">[Foto del equipo]</span>
+            <span class="text-sm font-medium opacity-80 mt-2">Una foto de ustedes en el taller o sosteniendo paletas de pintura quedaría genial aquí.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+	<section class="py-12 bg-white border-y border-pinceladas-paper overflow-hidden relative">
+      <div class="max-w-6xl mx-auto px-6 mb-8 text-center md:text-left">
+        <h2 class="text-xl font-bold text-pinceladas-wine uppercase tracking-widest opacity-80">Han pintado con nosotros</h2>
+      </div>
+      
+      <div class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
+        <ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
+          <li>
+            <div class="h-16 w-32 bg-gray-100 rounded-xl flex items-center justify-center text-gray-400 font-bold border border-gray-200">Logo Empresa</div>
+          </li>
+          <li>
+            <div class="h-16 w-32 bg-gray-100 rounded-xl flex items-center justify-center text-gray-400 font-bold border border-gray-200">Logo Empresa</div>
+          </li>
+          <li>
+            <div class="h-16 w-32 bg-gray-100 rounded-xl flex items-center justify-center text-gray-400 font-bold border border-gray-200">Logo Empresa</div>
+          </li>
+          <li>
+            <div class="h-16 w-32 bg-gray-100 rounded-xl flex items-center justify-center text-gray-400 font-bold border border-gray-200">Logo Empresa</div>
+          </li>
+          <li>
+            <div class="h-16 w-32 bg-gray-100 rounded-xl flex items-center justify-center text-gray-400 font-bold border border-gray-200">Logo Empresa</div>
+          </li>
+          
+          <li aria-hidden="true">
+            <div class="h-16 w-32 bg-gray-100 rounded-xl flex items-center justify-center text-gray-400 font-bold border border-gray-200">Logo Empresa</div>
+          </li>
+          <li aria-hidden="true">
+            <div class="h-16 w-32 bg-gray-100 rounded-xl flex items-center justify-center text-gray-400 font-bold border border-gray-200">Logo Empresa</div>
+          </li>
+          <li aria-hidden="true">
+            <div class="h-16 w-32 bg-gray-100 rounded-xl flex items-center justify-center text-gray-400 font-bold border border-gray-200">Logo Empresa</div>
+          </li>
+          <li aria-hidden="true">
+            <div class="h-16 w-32 bg-gray-100 rounded-xl flex items-center justify-center text-gray-400 font-bold border border-gray-200">Logo Empresa</div>
+          </li>
+          <li aria-hidden="true">
+            <div class="h-16 w-32 bg-gray-100 rounded-xl flex items-center justify-center text-gray-400 font-bold border border-gray-200">Logo Empresa</div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contacto" class="max-w-6xl mx-auto px-6 py-24">
+      <div class="bg-pinceladas-wine rounded-3xl p-8 md:p-12 shadow-2xl flex flex-col md:flex-row gap-12 items-center relative overflow-hidden">
+        
+        <div class="absolute -top-20 -right-20 w-64 h-64 bg-pinceladas-orange opacity-20 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="w-full md:w-1/2 flex flex-col gap-6 text-pinceladas-paper relative z-10">
+          <h2 class="text-4xl md:text-5xl font-black uppercase tracking-tight">
+            Hagamos <br/> <span class="text-pinceladas-orange">arte juntos</span>
+          </h2>
+          <p class="text-lg opacity-90 leading-relaxed">
+            ¿Quieres cotizar un evento privado, tienes alguna duda o simplemente quieres saludarnos? Escríbenos y te responderemos lo más pronto posible.
+          </p>
+          
+          <div class="mt-4 flex flex-col gap-5">
+            <a href="#" class="flex items-center gap-4 hover:text-pinceladas-pink transition-colors group">
+              <div class="bg-pinceladas-paper/10 p-3 rounded-full group-hover:bg-pinceladas-pink/20 transition-colors">
+                <span class="text-xl">📸</span>
+              </div>
+              <span class="font-bold text-lg">@pinceladaswithus</span>
+            </a>
+            <a href="#" class="flex items-center gap-4 hover:text-pinceladas-pink transition-colors group">
+              <div class="bg-pinceladas-paper/10 p-3 rounded-full group-hover:bg-pinceladas-pink/20 transition-colors">
+                <span class="text-xl">🎵</span>
+              </div>
+              <span class="font-bold text-lg">@pinceladaswithus</span>
+            </a>
+            <a href="#" class="flex items-center gap-4 hover:text-pinceladas-pink transition-colors group">
+              <div class="bg-pinceladas-paper/10 p-3 rounded-full group-hover:bg-pinceladas-pink/20 transition-colors">
+                <span class="text-xl">💬</span>
+              </div>
+              <span class="font-bold text-lg">WhatsApp (+58) 000-000000</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="w-full md:w-1/2 bg-pinceladas-paper rounded-2xl p-8 shadow-lg relative z-10">
+          <form class="flex flex-col gap-5">
+            <div>
+              <label class="block text-pinceladas-wine font-bold mb-2 text-sm uppercase tracking-wide" for="nombre">Tu Nombre</label>
+              <input type="text" id="nombre" class="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-pinceladas-orange focus:ring-2 focus:ring-pinceladas-orange/20 transition-all font-medium text-gray-800" placeholder="Ej. Ana Pérez">
+            </div>
+            <div>
+              <label class="block text-pinceladas-wine font-bold mb-2 text-sm uppercase tracking-wide" for="email">Tu Correo</label>
+              <input type="email" id="email" class="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-pinceladas-orange focus:ring-2 focus:ring-pinceladas-orange/20 transition-all font-medium text-gray-800" placeholder="hola@correo.com">
+            </div>
+            <div>
+              <label class="block text-pinceladas-wine font-bold mb-2 text-sm uppercase tracking-wide" for="mensaje">Mensaje</label>
+              <textarea id="mensaje" rows="4" class="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-pinceladas-orange focus:ring-2 focus:ring-pinceladas-orange/20 transition-all font-medium text-gray-800 resize-none" placeholder="¿En qué podemos ayudarte?"></textarea>
+            </div>
+            <button type="button" class="mt-2 bg-pinceladas-orange hover:bg-[#d9551a] text-white font-black uppercase tracking-wide text-lg py-4 rounded-xl transition-colors shadow-md flex justify-center items-center gap-2">
+              Enviar Mensaje <span>🚀</span>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <footer class="bg-pinceladas-wine text-pinceladas-paper py-8 text-center mt-12">
+      <div class="max-w-6xl mx-auto px-6 flex flex-col items-center gap-4">
+        <div class="font-bold text-2xl tracking-tight">
+          Pinceladas <span class="text-pinceladas-orange">With Us</span>
+        </div>
+        <p class="text-sm opacity-80">© {new Date().getFullYear()} Pinceladas With Us. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
   </div>
 </Layout>
+
+<style>
+  /* Animación para el carrusel infinito */
+  @keyframes infinite-scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  
+  .animate-infinite-scroll {
+    animation: infinite-scroll 20s linear infinite;
+    width: max-content;
+  }
+
+  /* Pausa el carrusel si alguien le pasa el mouse por encima */
+  .animate-infinite-scroll:hover {
+    animation-play-state: paused;
+  }
+</style>
