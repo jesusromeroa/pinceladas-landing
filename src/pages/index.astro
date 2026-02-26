@@ -43,34 +43,39 @@ import Layout from '../layouts/Layout.astro';
     <section id="servicios" class="max-w-6xl mx-auto px-6 py-16">
       <div class="mb-10 text-center md:text-left">
         <h2 class="text-3xl font-black text-pinceladas-wine uppercase tracking-tight">Experiencias Privadas</h2>
-        <p class="text-gray-600 mt-2">Personalizamos el arte para tus momentos especiales.</p>
+        <p class="text-gray-600 text-pinceladas-wine mt-2">Personalizamos el arte para tus momentos especiales.</p>
       </div>
 
-      <div class="bg-pinceladas-orange rounded-3xl p-8 md:p-16 grid grid-cols-1 md:grid-cols-2 gap-12 items-center shadow-xl relative overflow-hidden">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
         
-        <div class="absolute top-0 right-0 w-32 h-32 bg-pinceladas-pink opacity-50 rounded-bl-full mix-blend-multiply"></div>
-
-        <div class="flex flex-col gap-6 relative z-10 bg-pinceladas-paper p-8 md:p-12 rounded-xl shadow-lg transform -rotate-1">
-          <h3 class="text-4xl md:text-5xl font-black text-pinceladas-wine leading-tight uppercase tracking-tight">
-            Celebra tu cumple <br/>
-            <span class="text-pinceladas-orange normal-case text-4xl">with us</span>
-          </h3>
-          <p class="text-lg text-pinceladas-wine font-medium leading-relaxed">
-            Pinta, crea recuerdos únicos y haz algo diferente en ese día especial.
-          </p>
-          <div class="flex mt-2">
-            <a href="#contacto" class="bg-pinceladas-wine hover:bg-pinceladas-orange text-white px-8 py-3 rounded-full font-bold transition-all shadow-md">
+        <div class="relative group rounded-3xl overflow-hidden shadow-lg border border-gray-100 bg-pinceladas-paper h-80 md:h-[600px] flex flex-col justify-end">
+          
+          <img src="/cumpleaños.jpeg" alt="Servicio 1" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+          
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-90 pointer-events-none"></div>
+          
+          <div class="relative z-10 p-6 w-full mt-auto">
+            <a href="#contacto" class="block w-full text-center bg-pinceladas-orange hover:bg-pinceladas-wine text-white px-8 py-3 rounded-full font-bold transition-colors shadow-lg text-lg">
               Cotizar mi fecha
             </a>
           </div>
         </div>
 
-        <div class="relative w-full aspect-square flex justify-center items-center z-10">
-          <div class="w-full h-full border-4 border-pinceladas-pink border-dashed rounded-2xl flex items-center justify-center text-pinceladas-paper text-xl font-bold text-center p-4 bg-pinceladas-orange/50 backdrop-blur-sm">
-            [Foto de los pasteles, paleta de colores y el flyer]
+        <div class="relative group rounded-3xl overflow-hidden shadow-lg border border-gray-100 bg-pinceladas-paper h-80 md:h-[600px] flex flex-col justify-end">
+          
+          <img src="/corporativos.jpeg" alt="Servicio 2" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+          
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-90 pointer-events-none"></div>
+          
+          <div class="relative z-10 p-6 w-full mt-auto">
+            <a href="#contacto" class="block w-full text-center bg-pinceladas-orange hover:bg-pinceladas-wine text-white px-8 py-3 rounded-full font-bold transition-colors shadow-lg text-lg">
+              Cotizar mi fecha
+            </a>
           </div>
         </div>
+
       </div>
+
     </section>
 
     <section id="eventos" class="bg-white py-20 border-t border-pinceladas-paper">
@@ -95,10 +100,10 @@ import Layout from '../layouts/Layout.astro';
             <div class="flex justify-between items-center pt-4 border-t border-gray-200">
               <div class="flex flex-col">
                 <span class="text-sm text-gray-500 font-medium uppercase tracking-wider">Inversión</span>
-                <span class="text-2xl font-black text-pinceladas-orange">$24 <span class="text-sm text-gray-500 font-normal normal-case">/ persona</span></span>
+                <span class="text-2xl font-black text-pinceladas-orange">$25 <span class="text-sm text-gray-500 font-normal normal-case">/ persona</span></span>
               </div>
               <button class="bg-pinceladas-wine text-white px-5 py-2.5 rounded-xl font-bold hover:bg-pinceladas-orange transition-colors">
-                Anotarme
+                Reservar
               </button>
             </div>
           </div>
